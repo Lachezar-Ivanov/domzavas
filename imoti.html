@@ -18,7 +18,18 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
+  <style>
+      html, body, iframe {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-device-width: 740px) {
+        .desktop-iframe { display: none; }
+      }
+      @media (min-device-width: 741px) {
+        .iphone-iframe { display: none; }
+      }
+    </style>
   
 </head>
 <body>
@@ -75,9 +86,10 @@
         <div class="row">
             <div class="col-xs-12">
                 <figure class="mbr-figure">
-                    <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.homes.bg/company/domzavas/" allowfullscreen></iframe>
-   </div>
+                    
+                  
+                  <iframe class='iphone-iframe' scrolling='no' src='https://www.homes.bg/company/domzavas/'></iframe>
+    <iframe class='desktop-iframe' src='https://www.homes.bg/company/domzavas/'></iframe>
 
                     
 
